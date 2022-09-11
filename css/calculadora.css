@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;   
+    background-color: white; 
+    font-weight: 700;
+}
+
+ul{
+    list-style: none;
+}
+
+.ul__element{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.container-app{
+    padding: 1rem;
+    border: 1px solid gray;
+    width: 200px;
+    
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 6px;
+}
+
+.container__input{
+    width: 100%;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+.container__input form{
+    display: flex;
+    justify-content: center;
+    /* padding: 10px 0; */
+    padding-bottom: 5px;
+    
+}
+
+.inputNum{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    
+}
+
+.inputNum:first-child{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.btn__especials{
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+    gap: 20px;
+    padding-bottom: 1rem;
+}
+
+.btn__plus{
+    width: 25px;
+    height: 20px;
+}
+
+.btn__numeros{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin: 0 auto;
+    gap: 25px;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.btn{
+
+    width: 30px;
+    height: 20px;
+}
