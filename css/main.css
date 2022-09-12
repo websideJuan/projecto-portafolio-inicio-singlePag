@@ -19,7 +19,6 @@
 }
 
 body{
-
     font-family: 'Roboto', sans-serif;
     background-color: var(--root-bg-color);
     background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 40 42' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23fef5ed' fill-opacity='0.12'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -92,15 +91,15 @@ nav{
     'img1 img2 img3'
     'img4 img5 img6'
     ;
-    margin: 10px 0 ;
-    padding: 40px 0;
+    margin: 20px 0 ;
+    padding: 20px 0;
     justify-content: center;
-    gap: 30px 50px;
+    gap: 20px 30px;
 }
 
 .grid__area{
     width: 300px;
-    height: 240px;
+    height: 220px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -121,8 +120,10 @@ nav{
     padding: 1em;
     font-weight: 700;
     font-size: 1.4rem;
-    color: var(--root-color-text);
+    color: var(--root-text-color);
     opacity: 0;
+    font-family: 'Ms Madi', cursive;
+    letter-spacing: 2px;
 }
 
 .parrafo-grid{
@@ -136,7 +137,6 @@ nav{
 
 .grid__area:hover .text-grid .titulo-grid,
 .grid__area:hover .text-grid .parrafo-grid{
-    transition: transform .3s linear, opacity .9s;
     transform: translatey(0);
     opacity: 1;
 }
@@ -166,6 +166,14 @@ nav{
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
+    transition: all 1s;
+}
+
+.grid__area:hover .img__layout{
+    transition: all 1s;
+    padding: 0px;
+    transform: scale(1.4);
+    transform-origin: left;
 }
 
 .container-overflowPrueba{
@@ -301,6 +309,7 @@ nav{
     transform: scale(.9);
     transition: .5s all;
     padding: 7px;
+    box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.5);
 }
 
 .port__columns img:hover{
@@ -328,7 +337,7 @@ nav{
 .parrafo:nth-child(2){
     transform: scale(1.1);
 }
-
+/* 
 .parrafo:first-child:hover{
     transform: scale(1.4) translateX(230px);
     transition: transform 1s;
@@ -347,7 +356,7 @@ nav{
     transform: scale(1.4) translateX(-230px);
     transition: transform 1s;
     transform-origin: center;
-}
+} */
 
 .img__parrafo{
     width: 100%;
@@ -412,4 +421,51 @@ nav{
 
 .table__container td{
     background-color: #fff;
+}
+
+/*Formulario*/
+
+.form-grid{
+    padding: 100px 0;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 50px 400px;
+    text-align: center;
+}
+
+.title-form{
+    background-color: var(--root-bg-color);
+    color: var(--root-text-color);
+    font-size: 2rem;
+    font-family: 'Ms Madi', cursive;
+    letter-spacing: 2px;
+    border: .5px solid var(--root-text-color);
+    border-bottom: none;
+    padding-top: 10px;
+}
+
+.form-control{ 
+    border: .5px solid var(--root-text-color);
+    background-color: var(--root-bg-color);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 0 6px 6px ;
+    border-top: none;
+}
+
+.form__section{
+    display: inherit;
+    width: 400px;
+}
+
+.form__control{
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    border-radius: 4px;
 }
