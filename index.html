@@ -22,7 +22,7 @@
                         <a href="#principal" class="nav-link">Inicio</a>
                     </li>
                     <li>
-                        <a href="./calculadora.html" class="nav-link">Sobre mi</a>
+                        <a href="#about" class="nav-link">Sobre mi</a>
                     </li>
                     <li>
                         <a href="#" class="nav-link">Portafolio</a>
@@ -126,11 +126,11 @@
                         </div>
                     </div>
                     <div class="port__columns">
-                        <img src="./img/grid-css.svg" alt="...">
-                        <b class="bold">Css grid</b>
                         <ul class="list">
                             <li>Loyaut</li>
                         </ul>
+                        <img src="./img/grid-css.svg" alt="...">
+                        <b class="bold">Css grid</b>
                     </div>
                     <div class="port__columns">
                         <img src="./img/javascript.svg" alt="...">
@@ -170,7 +170,7 @@
                     </div>
                 </section>
             </div>
-            <div class="about">
+            <div class="about" id="about">
                 <section class="container">
                     <section  class="container-overflowPrueba">
                         <div class="parrafo">
@@ -241,25 +241,33 @@
                             <section class="form__section">
                                 <input 
                                     type="text" 
-                                    placeholder="Nombre "
+                                    placeholder=" "
                                     required    
                                     class="form__control"
+                                    name="nombre"
+                                    autofocus
                                 >
+                                <label for="nombre" class="form__nombre">Nombre:</label>
                             </section>
                             <section class="form__section">
                                 <input 
                                     type="email" 
-                                    placeholder="E-mail "
+                                    placeholder=" "
                                     required    
                                     class="form__control"
+                                    name="formEmail"
                                 >
+                                <label for="formEmail" class="form__nombre">Email:</label>
                             </section>
                             <section class="form__section">
                                 <textarea 
+                                    rows="5"
+                                    cols="15"
                                     class="form__control"
-                                    placeholder="Comentario"    
-                                >
-                                </textarea>
+                                    placeholder=" "    
+                                    name="comentario"
+                                ></textarea>
+                                <label for="comentario" class="form__nombre">Comentame</label>
                             </section>
                             <section class="form__section">
                                 <button type="submit" class="btn__form">
@@ -270,7 +278,27 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </main>
+    <article class="social">
+        <div class="grid__social">
+            <div class="grid__colums grid__colums-social">
+                <ul class="flex-list">
+                    <li>
+                        <a href="#"><img src="./img/instagram.svg" class="img-list" alt="social-"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/whatsapp.svg" class="img-list" alt="social-"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./img/linkedin.svg" class="img-list" alt="social-"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="grid__colums grid__colums-icons"></div>
+            <div class="grid__colums grid__columns-text"><p>banner social</p></div>
+        </div>
+    </article>
 </body>
 </html>
